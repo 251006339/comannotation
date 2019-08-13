@@ -1,0 +1,5 @@
+1.通过动态代理,获得代理对象,TMapper.调用实现的方法sleectJsonById("1")执行在方法里面会调用先获得方法,参数,具体的代理对象
+2.使用代理对象去调用getMethod("")方法获得方法对象,然后方法对象去调用invoke方法,传入具体的对象和方法需要的参数;调用invoke方法;
+3.调用invoke方法里面定义方法doinsert执行 doselect;
+4.doinsert 使用method方法判断方法上是否有注解,如果有注解获得注解(Brin.class)对象,根据注解获得注解上的值,
+5.mappingData 调用mappingData方法--
